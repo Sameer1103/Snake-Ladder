@@ -1,0 +1,148 @@
+body{
+    background-color: #4E6C50;
+    text-align: center;
+    position: relative;
+}
+img{
+    margin: 40px;
+    margin-top: 0;
+}
+h1{
+    color: #FFBF00;
+    font-size: 6rem;
+    display: inline-block;
+    font-family: 'Lobster', cursive;
+}
+h2{
+  font-family: 'Merriweather', serif;
+  font-size: 2.3rem;
+  word-spacing: 1.4rem;
+  color: #D9ACF5;
+}
+.player{
+    color: #FFBF00;
+    font-size: 2rem;
+    display: inline-block;
+    font-family: 'Merriweather', serif;
+    margin: 40px 85px;
+}
+div{
+    display: inline-block;
+}
+.player1{
+    text-align: center;
+    margin-right: 50px;
+    width: 320px;
+}
+.player2{
+    text-align: center;
+    margin-left: 50px;
+    width: 325px;
+}
+#p1{
+    margin-right: 85px;
+}
+#p2{
+    margin-left: 85px;
+}
+.board-img{
+    height: 37.5rem;
+    width: 37.5rem;
+}
+.btn, .btn1{
+    background: #0395f7;
+    background-image: -webkit-linear-gradient(top, #0395f7, #316c91);
+    background-image: -moz-linear-gradient(top, #0395f7, #316c91);
+    background-image: -ms-linear-gradient(top, #0395f7, #316c91);
+    background-image: -o-linear-gradient(top, #0395f7, #316c91);
+    background-image: linear-gradient(to bottom, #0395f7, #316c91);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-width: 0;
+    border-radius: 60px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover, .btn1:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  .redcounter{
+    position: absolute;
+    top: 800px;
+    left: 360px;
+    border-radius: 50%;
+  }
+  .bluecounter{
+    position: absolute;
+    top: 800px;
+    left: 360px;
+    border-radius: 50%;
+  }
+  .dthrow{
+    position: absolute;
+    top: 400px;
+    left: 600px;
+  }
+  .die-face{
+    position: absolute;
+    top: 440px;
+    left: 630px;
+    border-radius: 20%;
+    border: solid 4px rgb(142, 3, 142);
+  }
+  .fw1{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+  }
+  .fw2{
+    position: absolute;
+    top: 250px;
+    right: 100px;
+  }
+  .arrow1{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 500px;
+    left: 120px;
+  }
+  .arrow2{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 500px;
+    right: 120px;
+  }
+  #counter1{
+    margin: 0 85px 40px;
+  }
+  #counter2{
+    margin: 0 85px 40px;
+  }
+  .win{
+    position: absolute;
+    color: #13005A;
+    top: 450px;
+    left: 450px;
+    bottom: 450px;
+    right: 450px;
+  }
+  hr{
+    background-color: rgb(4, 74, 4);
+    height: 2px;
+    margin-top: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(4, 74, 4);
+  }
