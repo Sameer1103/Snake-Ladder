@@ -77,7 +77,7 @@ function movec(num, i) {
             else $(".win").text(name2 + " Wins");
             $("button").removeClass("btn");
             $("button").addClass("btn1");
-            $("button").html("<a href = 'index.html'>Restart</a>");
+            $("button").html("<a href = 'game.html'>Restart</a>");
             $("button a").css("text-decoration", "none");
             $("button a").css("color", "white");
             return;
