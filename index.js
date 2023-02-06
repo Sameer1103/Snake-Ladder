@@ -37,6 +37,7 @@ function shiftToPoint(counter, e, i) {
 
 function movec(num, i) {
     var d, l, t, e;
+    var t1, t2, l1, l2;
     l = $("." + c[i]).css("left");
     t = $("." + c[i]).css("top");
     l = parseInt(l, 10);
@@ -110,17 +111,49 @@ function movec(num, i) {
         shiftToPoint(c[i], e, i);
     }
     },1000);
+    setTimeout(function () {
+        t1 = parseInt($("." + c[0]).css("top"), 10);
+        t2 = parseInt($("." + c[1]).css("top"), 10);
+        l1 = parseInt($("." + c[0]).css("left"), 10);
+        l2 = parseInt($("." + c[1]).css("left"), 10);
+        if (l1 === l2 && t1 === t2) {
+            t = $("." + c[0]).css("top");
+            t = parseInt(t, 10);
+            $("." + c[0]).css("top", (t + 15) + "px");
+            t = $("." + c[1]).css("top");
+            t = parseInt(t, 10);
+            $("." + c[1]).css("top", (t - 15) + "px");
+        }
+    }, 1005);
 }
 
 var c = ["redcounter", "bluecounter"], i = 0, num, M, l, t, e;
 M = new Map([[1, 38], [4, 14], [9, 31], [17, 7], [21, 42], [28, 84], [51, 67], [54, 34], [62, 19], [64, 60], [72, 91], [80, 99], [87, 36], [93, 73], [95, 75], [98, 79]]);
 var rows = [1, 1]; // Rows in which counters are present
+var t1,t2,l1,l2;
+t1 = parseInt($("." + c[0]).css("top"), 10);
+t2 = parseInt($("." + c[1]).css("top"), 10);
+l1 = parseInt($("." + c[0]).css("left"), 10);
+l2 = parseInt($("." + c[1]).css("left"), 10);
+if (l1 === l2 && t1 === t2) {
+    t = $("." + c[0]).css("top");
+    t = parseInt(t, 10);
+    $("." + c[0]).css("top", (t + 15) + "px");
+    t = $("." + c[1]).css("top");
+    t = parseInt(t, 10);
+    $("." + c[1]).css("top", (t - 15) + "px");
+}
     $(".turn1").hide();
     $(".btn").click(function () {
         $(".board-img").before("<img src= 'Images/dicef.webp' alt= 'dice-thrown' class= 'dthrow'>");
         setTimeout(function () { $(".dthrow").remove(); }, 2000);
         num = Math.floor(Math.random() * 6) + 1;
         setTimeout(showDice, 2000, num);
+        var t1 = parseInt($("." + c[0]).css("top"), 10), t2 = parseInt($("." + c[1]).css("top"), 10);
+        if (t1 - t2 === 30) {
+            $("." + c[0]).css("top", (t1 - 15) + "px");
+            $("." + c[1]).css("top", (t2 + 15) + "px");
+        }
         setTimeout(movec, 3000, num, i);
         if (num != 6) {
             $(".turn" + i).hide();
