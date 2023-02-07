@@ -30,11 +30,13 @@ div{
     display: inline-block;
 }
 .player1{
+    position: relative;
     text-align: center;
     margin-right: 50px;
     width: 320px;
 }
 .player2{
+    position: relative;
     text-align: center;
     margin-left: 50px;
     width: 325px;
@@ -44,6 +46,9 @@ div{
 }
 #p2{
     margin-left: 85px;
+}
+.board{
+  position: relative;
 }
 .board-img{
     height: 37.5rem;
@@ -78,51 +83,51 @@ div{
   }
   .redcounter{
     position: absolute;
-    top: 800px;
-    left: 360px;
+    top: 555px;
+    left: -45px;
     border-radius: 50%;
   }
   .bluecounter{
     position: absolute;
-    top: 800px;
-    left: 360px;
+    top: 555px;
+    left: -45px;
     border-radius: 50%;
   }
   .dthrow{
     position: absolute;
-    top: 400px;
-    left: 600px;
+    top: 140px;
+    left: 200px;
   }
   .die-face{
     position: absolute;
-    top: 440px;
-    left: 630px;
+    top: 180px;
+    left: 230px;
     border-radius: 20%;
     border: solid 4px rgb(142, 3, 142);
   }
   .fw1{
     position: absolute;
-    top: 250px;
-    left: 100px;
+    top: 0;
+    left: -300px;
   }
   .fw2{
     position: absolute;
-    top: 250px;
-    right: 100px;
+    top: 0;
+    right: -300px;
   }
   .arrow1{
     position: absolute;
     height: 60px;
     width: 60px;
-    top: 500px;
-    left: 120px;
+    top: 80px;
+    left: 90px;
   }
   .arrow2{
     position: absolute;
     height: 60px;
     width: 60px;
-    top: 500px;
-    right: 120px;
+    top: 80px;
+    right: 90px;
   }
   #counter1{
     margin: 0 85px 40px;
@@ -133,10 +138,10 @@ div{
   .win{
     position: absolute;
     color: #13005A;
-    top: 450px;
-    left: 450px;
-    bottom: 450px;
-    right: 450px;
+    top: 130px;
+    left: 80px;
+    bottom: 130px;
+    right: 80px;
   }
   hr{
     background-color: rgb(4, 74, 4);
